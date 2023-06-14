@@ -18,13 +18,10 @@
 									<?= $this->session->flashdata('pesan'); ?>
                                     <form class="user" method="post" action="<?= base_url('autentifikasi'); ?>">
                                         <div class="form-group">
-                                            <input name="email" type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Masukan Alamat Email">
+                                            <input name="email" value="<?php echo set_value('email'); ?>" type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukan Alamat Email">
                                         </div>
                                         <div class="form-group">
-                                            <input name="password" type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                            <input name="password" value="<?php echo set_value('password'); ?>" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Masuk

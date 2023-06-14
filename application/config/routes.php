@@ -51,5 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'autentifikasi';
 $route['register'] = 'autentifikasi/registrasi';
+$route['kategori_buku'] = 'Buku/kategori';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
